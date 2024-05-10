@@ -29,11 +29,11 @@ def sort_on(dict):
      return dict["num"]
 
 def sorted_list_of_chars(num_chars_dict):
-     sorted_value = []
-     for ch in num_chars_dict:
-          sorted_value.append({"char": ch, "num" : num_chars_dict[ch]})
-          sorted_value.sort(reverse=True, key=sort_on)
-          return sorted_value
+    sorted_value = []
+    for ch in num_chars_dict:
+        sorted_value.append({"char": ch, "num": num_chars_dict[ch]})
+    sorted_value.sort(reverse=True, key=sort_on)
+    return sorted_value
      
 # Count each letter and put them in a dictionairy -> lower their characters with.lower
 def get_count_letters(count):
