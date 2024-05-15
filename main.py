@@ -3,7 +3,7 @@ def main():
     find_path = "books/frankenstein.txt"
     text = get_book_text(find_path)
     num = get_num_words(text)
-    counter= get_count_letters(text)
+    counter = get_count_letters(text)
     sorted_list_char = sorted_list_of_chars(counter)
 
     print(f" --- Begin report of {find_path} --- ")
@@ -16,7 +16,6 @@ def main():
         print(f"The '{item['char']}' character was found {item['num']} times")
 
     print("--- End report ---")
-    
 
 # Get total number of words -> split words then return length
 def get_num_words(text):
@@ -35,7 +34,7 @@ def sorted_list_of_chars(num_chars_dict):
     sorted_value.sort(reverse=True, key=sort_on)
     return sorted_value
      
-# Count each letter and put them in a dictionairy -> lower their characters with.lower
+# Count each letter and put them in a dictionairy -> lower their characters with .lower
 def get_count_letters(count):
         count_list = {}
         for char in count:
